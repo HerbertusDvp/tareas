@@ -2,10 +2,21 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
+<?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="herbertus.tareas.controlador.IndexControlador">
    <children>
-      <Label layoutX="254.0" layoutY="36.0" text="Sistema de tareas" />
+      <Label layoutX="183.0" layoutY="34.0" text="Sistema de tareas">
+         <font>
+            <Font name="Consolas" size="25.0" />
+         </font></Label>
+      <TableView fx:id="tTarea" layoutX="76.0" layoutY="71.0" prefHeight="200.0" prefWidth="466.0">
+        <columns>
+          <TableColumn fx:id="tTareaId" prefWidth="43.33331298828125" text="Id" />
+          <TableColumn fx:id="tTareaNombre" prefWidth="142.0" text="Nombre" />
+            <TableColumn fx:id="tTareaResponsable" prefWidth="142.66665649414062" text="Responsable" />
+            <TableColumn fx:id="tTareaEstatus" minWidth="2.33331298828125" prefWidth="92.0" text="Estatus" />
+        </columns>
+      </TableView>
    </children>
 </AnchorPane>
