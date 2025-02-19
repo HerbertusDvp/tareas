@@ -13,5 +13,4 @@ public class TareasApplication {
 		//SpringApplication.run(TareasApplication.class, args);
 		Application.launch(SistemaTareasFX.class, args);
 	}
-
 }
